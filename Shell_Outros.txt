@@ -1,0 +1,95 @@
+
+* Outros exemplos * 
+
+chmod 777: leitura (r), gravação (w) e execução (x) para todos (“usuário”, “grupo” e “outros”)
+chmod 755: “rwx” para o “dono” (usuário), “rw” para o “grupo” e “outros”
+
+ssh usuário@host: - conecta ao host como usuário (exemplo: ssh computeiro@meuservidor)
+
+ssh -p <porta> usuário@host - conecta ao host na porta especificada
+
+ssh-copy-id usuário@host - adiciona a sua chave para o host e usuário daquele host; serve para ativar logins sem senha com uso de chaves
+
+grep - sequência arquivos pesquisa pela sequência nos arquivos
+
+grep –r sequência dir - pesquisa recursivamente pela sequência no diretório dir
+
+<comando> | grep sequência - pesquisa pela sequência na saída do comando
+
+locate arq - encontra todas as instâncias de um arquivo
+
+date - mostra a data e hora atual
+
+cal - mostra um calendário do mês atual
+
+uptime - mostra o tempo de atividade do sistema
+
+w - mostra quem está online
+
+whoami - mostra como quem você está logado
+
+finger <user> - mostra informações do usuário
+
+uname -a - mostra informações do kernels
+
+cat /porc/cpuinfo - mostra informações da CPU
+
+cat /proc/meminfo - mostra informações da memória
+
+man <comando> - abre o manual do comando especificado
+
+df - mostra o uso do disco
+
+du - mostra o uso do espaço em um diretório
+
+free - mostra o uso da memória e swap
+
+whereis <aplicação> - mostra possíveis localizações do aplicativo
+
+which <aplicação> - mostra que aplicação irá rodar por omissão
+
+tar cf tar arqs - cria um pacote TAR (nomeado pacote.tar) com os arquivos especificados
+
+tar xf tar - extrai os arquivos de “pacote.tar”
+
+tar czf tar.gz arqs - cria um pacote TAR (nomeado pacote.tar.gz) com compressão GZip
+
+tar xzf tar.gz - extrai um pacote TAR (nomeado pacote.tar.gz) com compressão GZip
+
+tar cjf tar.bz2 - cria um pacote TAR (nomeado pacote.tar.bz2) com compressão BZip2
+
+tar xjf tar.bz2 - extrai um pacote TAR (nomeado pacote.tar.gz) com compressão BZip2
+
+gzip arq - compacta um arquivo e o renomeia para arq.gz
+
+gzip -d gz - descompacta arq.gz para um arquivo
+
+ping <host> - envia um pacote ICMP (ping) para o host e mostra o resultado
+
+whois <domínio> - retorna informações sobre o domínio
+
+dig <domínio> - retorna informações de DNS para o domínio
+
+dig -x <host> - mostra o retorno reverso para um host
+
+wget <arq> - faz o download de arquivo(arq)
+
+wget -c <arq> - continua o download interrompido de um arquivo (arq)
+
+--------------------------------------------------------------------------
+# Instalação a partir do código fonte (source code); 
+# Os comandos devem ser digitados na sequência em um terminal, um de cada vez:
+
+ ./configure
+ make
+ make install
+
+--------------------------------------------------------------------------
+# Comandos de instaladores
+
+dpkg -i deb - instala um pacote DEB (distros Debian)
+rpm -Uvh rpm - instala um pacote RPM (Distros que utilizam RPM)
+
+--------------------------------------------------------------------------
+
+git commit -m "Shell Outros"
