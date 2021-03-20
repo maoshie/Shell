@@ -1,0 +1,72 @@
+
+# Arquivos e diretórios
+
+cd /home: Digite o diretorio “em casa”.
+
+cd ..: Volte um nivel.
+
+cd ../..: volta 2 niveis.
+
+cd: Va para o diretorio de raiz.
+
+cd ~user1: Va para o diretorio de user1.
+
+cd -: Volte para o diretório anterior.
+
+pwd: Mostre o caminho do diretório de trabalho.
+
+ls: consulte os arquivos em um diretório.
+
+ls -F: consulte os arquivos em um diretório.
+
+ls -l: mostre detalhes de arquivos e pastas em um diretório.
+
+ls -a: Mostre arquivos ocultos.
+
+ls *[0-9]*: Mostre arquivos e pastas que contêm números.
+
+tree: Mostre arquivos e pastas em uma árvore a partir da raiz. (1)
+
+lstree: Mostre arquivos e pastas em uma árvore a partir da raiz. (2)
+
+mkdir dir1: Crie uma pasta ou diretório com nome ‘dir1’.
+
+mkdir dir1 dir2: Crie duas pastas ou diretórios simultaneamente (criando dois diretórios ao mesmo tempo).
+
+mkdir -p /tmp/dir1/dir2: Crie uma árvore de diretório.
+
+rm -f file1: Exclua o arquivo chamado ‘arquivo1’.
+
+rmdir dir1: Exclua a pasta chamada ‘dir1’.
+
+rm -rf dir1: exclua uma pasta chamada ‘dir1’ com seu conteúdo recursivamente. (Se excluí-lo recursivo que estou a dizer que é com o seu conteúdo).
+
+rm -rf dir1 dir2: Exclua duas pastas (diretórios) com seu conteúdo recursivamente.
+
+mv dir1 new_dir: Renomear ou mover um arquivo ou pasta (diretório).
+
+cp file1: Copie um arquivo.
+
+cp file1 file2: Copie os dois arquivos ao mesmo tempo.
+
+cp dir /* .: Copie todos os arquivos de um diretório dentro do diretório de trabalho atual.
+
+cp -a /tmp/dir1 .: Copie um diretório dentro do diretório de trabalho atual.
+
+cp -a dir1: Copie um diretório.
+
+cp -a dir1 dir2: diretório de cópia dois em uníssono.
+
+ln -s file1 lnk1: Crie um link simbólico para o arquivo ou diretório.
+
+ln file1 lnk1: Crie um vínculo físico para o arquivo ou diretório.
+
+touch -t 0712250000 file1: modifica o tempo real (tempo de criação) de um arquivo ou diretório.
+
+file file1: saída (despejo na tela) do tipo mime de um arquivo de texto.
+
+iconv -l: listas de cifras conhecidas.
+
+iconv -f fromEncoding -t toEncoding inputFile > outputFile: Crie uma nova forma de arquivo de entrada assumindo que está codificado em fromEncoding e convertê-lo para ToEncoding.
+
+find . -maxdepth 1 -name *.jpg –print -exec convert ”{}” -resize 80×60 “thumbs/{}” \;: agrupando arquivos dimensionados no diretório atual e enviá-los aos diretórios em visualização de miniaturas (requer o converso do ImagemagicK).
