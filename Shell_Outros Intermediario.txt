@@ -92,4 +92,4 @@ rpm -Uvh rpm - instala um pacote RPM (Distros que utilizam RPM)
 
 --------------------------------------------------------------------------
 
-git commit -m "Shell Outros"
+git commit -m "Shell Outros intermediario"

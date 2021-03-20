@@ -1,0 +1,55 @@
+
+# Comandos Avançados do Terminal GNU/Linux 
+
+# Informações do sistema Linux
+arch: Mostre a arquitetura da máquina (1).
+
+uname -m: Mostre a arquitetura da máquina (2).
+
+uname -r: Mostre versão do kernel usada.
+
+dmidecode -q: - Mostre os componentes do sistema (hardware).
+
+hdparm -i /dev/hda: Mostre as características de um disco rígido.
+
+hdparm -tT /dev/sda: Execute teste de leitura em um disco rígido.
+
+cat /proc/cpuinfo: Exiba informações da CPU.
+
+cat /proc/interrupts: Mostre interrupções.
+
+cat /proc/meminfo: verificar a utilização de memória.
+
+cat /proc/swaps:df -h: Mostre o tamanho dos arquivos e diretórios ordenados por tamanho.
+
+ls -lSr |more: Estimar o espaço usado pelo diretório ‘dir1’.
+
+du -sh dir1: Mostre o tamanho dos arquivos e diretórios ordenados por tamanho.
+
+du -sk * | sort -rn: mostra o espaço usado por pacotes rpm instalados organizado pelo tamanho (Fedora, Red Hat e outros).
+
+rpm -q -a –qf ‘%10{SIZE}t%{NAME}n’ | sort -k1,1n: mostra o espaço usado por pacotes instalados, organizado pelo tamanho (Debian, Ubuntu e outros).
+
+dpkg-query -W -f=’${Installed-Size;10}t${Package}n’ | sort -k1,1n: g> Mostre arquivos de swap.
+
+cat /proc/version: Exiba a versão do kernel.
+
+cat /proc/net/dev: Mostre estatísticas e adaptadores de rede.
+
+cat /proc/mounts: Mostre o sistema de arquivos montado.
+
+lspci -tv: exiba os dispositivos PCI.
+
+lsusb -tv: Mostre os dispositivos USB.
+
+date: Mostre a data do sistema.
+
+cal 2011: Visualizar o calendário em 2011.
+
+cal 07 2011: Mostre o calendário para o mês de julho de 2011.
+
+date 041217002011.00: Coloque (estado, ajustar) data e hora.
+
+clock -w: Salve as alterações para a data na BIOS.
+
+git commit -m "Comandos avançados"
