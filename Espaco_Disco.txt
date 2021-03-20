@@ -1,0 +1,11 @@
+
+# Espaço em disco
+
+df -h: Mostre o tamanho dos arquivos e diretórios ordenados por tamanho.
+
+ls -lSr |more: Estimar o espaço usado pelo diretório ‘dir1’.
+
+du -sh dir1: Mostre o tamanho dos arquivos e diretórios ordenados por tamanho.
+
+du -sk * | sort -rn: mostra o espaço usado por pacotes rpm instalados organizado pelo tamanho
+ (Fedora, Red Hat e outros).
