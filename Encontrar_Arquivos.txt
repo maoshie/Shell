@@ -1,0 +1,22 @@
+
+# Encontrar arquivos 
+
+find / -name file1: busca de arquivo e diretório da raiz do sistema.
+
+find / -user user1: Encontre arquivos e diretórios pertencentes ao usuário ‘user1’.
+
+find /home/user1 -name \*.bin: Procure arquivos com extensão ‘. bin’ no diretório ‘/ home/user1’.
+
+find /usr/bin -type f -atime +100: Pesquisar arquivos binários não utilizados nos últimos 100 dias.
+
+find /usr/bin -type f -mtime -10: Pesquisar arquivos criados ou alterados nos últimos 10 dias.
+
+find / -name \*.rpm -exec chmod 755 ‘{}’ \;: Procure arquivos com extensão ‘. rpm’ e modificar permissões.
+
+find / -xdev -name \*.rpm: Procure arquivos com extensão ‘. rpm’ ignorando a mídia removível, como CD-ROM, pen-drive, etc…
+
+locate \*.ps: encontrar arquivos com a extensão ‘. ps primeiro executado com o comando “updatedb’.
+
+whereis halt: Mostre a localização de um arquivo binário, a ajuda ou a fonte. Neste caso ele pergunta onde está o comando ‘parada’.
+
+which halt: mostrar o caminho completo (o caminho completo) para um binário / executável.
