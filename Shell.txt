@@ -2,38 +2,111 @@
 
 * Comandos shell * 
 
+* Lista dos Comandos mais Comuns *
 -----------------------------------------------------
 
+Exit - faz logout da sessão atual
 
------------------------------------------------------
+ls - lista diretórios
+
+ls -al - lista mostrando também arquivos ocultos
+
+cd <diretorio> - muda do diretório
+
+cd - muda para o diretório /home (arquivos pessoais)
+
+pwd - mostra o caminho do diretório atual
+
+mkdir <diretorio> - criar um diretório
+
+rm <arquivo> - apaga o arquivo especificado
+
+rm -r <diretorio> - apaga o diretório 
+
+rm -f <arq> - apaga o arquivo especificado forçadamente (-f de force)
+
+rm -rf <diretorio> - apaga o diretório especificado forçadamente
+
+cp -r <arq_origem> <arq_destino> - copia o arq1 de origem para destino.
+
+cp -r <dir_origem> <dir_destino> - copia o dir_origem para dir_destino
+
+mv arq1 arq2 dupla função - pode ser usado para renomear ou mover arquivo1 para arquivo2.
+
+ln -s arq link - cria um link simbólico link(atalho) para arquivo
+
+touch <arq> - cria ou atualiza o arquivo
+
+cat > arq - direciona a entrada padrão para um arquivo
+
+more arq - mostra o conteúdo de um arquivo
+
+head arq - mostra as primeiras 10 linhas de um arquivo
+
+tail arq mostra as últimas 10 linhas de um arquivo (substituir a variável arq pelo nome do arquivo)
+
+tail -f arq - mostra o conteúdo de um arquivo enquanto ele é atualizado (aumenta de tamanho),
+   iniciando com as últimas 10 linhas
+
+ps - mostra os processos de usuário ativos em tempo real￼
+
+top - mostra todos os processos rodando em tempo real
+
+kill pid - mata um processo específico pelo número ID
+
+killall <processo> - mata todos os processos com o nome especificado
+
+bg - lista trabalhos parados ou em segundo plano ou pode continua-los também
+
+fg - traz o trabalho mais recente para o primeiro plano
+
+fg processo - traz o trabalho “trab” para o primeiro plano
+
+chmod octal <arq> - muda as permissões do arquivo “arq” para octal,
+    4 – leitura (r, de read)
+    2 – gravação (w, de write)
+    1 – execução (x, de execute)
+
+git commit -m "Comandos comuns Shell"
 
 
------------------------------------------------------
-
-
------------------------------------------------------
-
-
------------------------------------------------------
-
-
------------------------------------------------------
-
-
------------------------------------------------------
-
-
------------------------------------------------------
 
 
 
------------------------------------------------------
 
 
------------------------------------------------------
 
 
------------------------------------------------------
 
 
------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
