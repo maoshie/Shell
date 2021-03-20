@@ -1,1 +1,23 @@
-ECHO est  ativado.
+
+# Desligar (reinicialização do sistema ou logout)
+
+
+shutdown -h now: Desligue o sistema
+
+init 0: Desligue o sistema
+
+telinit 0: Desligue o sistema
+
+halt: Desligue o sistema
+
+shutdown -h hours: minutos e horas
+
+shutdown -c: Cancele um desligamento do sistema planejado.
+
+shutdown -r now: Reinicie
+
+reboot: Reinicie
+
+logout: Feche a sessão.
+
+git commit -m "Desliga_Reinicia"
