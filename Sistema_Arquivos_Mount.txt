@@ -1,0 +1,24 @@
+
+# Trabalhando com sistema de arquivos
+
+mount /dev/hda2 /mnt/hda2: Monte um disco chamado hda2. Primeiro, verifique a existência do diretório ‘/ mnt/hda2’; Se você não estiver, você deve criá-lo.
+
+umount /dev/hda2: Remova um disco chamado hda2. Em primeiro lugar, do ponto de ‘ / mnt/hda2.
+
+fuser -km /mnt/hda2: Force a remoção quando o dispositivo está ocupado.
+
+umount -n /mnt/hda2: Execute a remoção sem ler o arquivo/etc/MTAB. Útil quando o arquivo é somente leitura ou o disco rígido está cheio.
+
+mount /dev/fd0 /mnt/floppy: Monte um disco flexível (disquete).
+
+mount /dev/cdrom /mnt/cdrom: montar um cdrom / dvdrom.
+
+mount /dev/hdc /mnt/cdrecorder: Monte um cd gravável ou um dvdrom.
+
+mount /dev/hdb /mnt/cdrecorder: montar um cd gravável / dvdrom (um dvd).
+
+mount -o loop file.iso /mnt/cdrom: Monte um arquivo ou uma imagem iso.
+
+mount -t vfat /dev/hda5 /mnt/hda5: Monte um sistema de aComandos rquivos FAT32.
+
+mount /dev/sda1 /mnt/usbdisk: Monte uma memória ou um pen-drive usb (sem especificar o tipo de sistema de arquivos).
