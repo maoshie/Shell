@@ -2,6 +2,8 @@
 
 * Comandos shell * 
 
+* site: https://www.uniaogeek.com.br/guia-de-comandos-shell-terminal-gnulinux/
+
 * Lista dos Comandos mais Comuns *
 -----------------------------------------------------
 
