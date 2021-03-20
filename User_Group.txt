@@ -1,0 +1,28 @@
+
+# Usuários e grupos
+
+groupadd nombre_del_grupo: Crie um novo grupo.
+
+groupdel nombre_del_grupo: Exclua um grupo.
+
+groupmod -n nuevo_nombre_del_grupo viejo_nombre_del_grupo: Renomear um grupo.
+
+useradd -c “Name Surname ” -g admin -d /home/user1 -s /bin/bash user1: Crie um novo usuário “admin” do grupo.
+
+useradd user1: Crie um novo usuário.
+
+userdel -r user1: excluir um usuário (‘-r’ elimina o diretório Home).
+
+usermod -c “User FTP” -g system -d /ftp/user1 -s /bin/nologin user1: Altere os atributos do usuário.
+
+passwd: Altere senha.
+
+passwd user1: Altere a senha do usuário (apenas pelo root).
+
+chage -E 2011-12-31 user1: Defina um limite de tempo para a senha do usuário. Neste caso, ele diz que a chave expira a 31 de dezembro de 2011.Informações do sistema Linux
+
+pwck: Verifique a sintaxe correta ‘/ etc/passwd’ arquivo formato e a existência de usuários.
+
+grpck: Verifique a sintaxe correta e formato do arquivo ‘/ etc/grupo’ e a existência de grupos.
+
+newgrp group_name: Registre um novo grupo para alterar o grupo padrão dos arquivos recém-criados.
