@@ -69,44 +69,4 @@ chmod octal <arq> - muda as permissões do arquivo “arq” para octal,
 
 git commit -m "Comandos comuns Shell"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+git commit -m "Sem espaços"
